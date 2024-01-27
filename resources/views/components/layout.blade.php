@@ -8,8 +8,10 @@
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <script src="{{ mix('/js/app.js') }}" async defer></script>
     <title>{{ $title ?? 'つぶやきアプリ' }}</title>
+    @stack('css')
 </head>
 <body class="bg-gray-50">
     {{ $slot }}
+    {{-- <aside>{{ $aside}}</aside> --}}
 </body>
 </html>
